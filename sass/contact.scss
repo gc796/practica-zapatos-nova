@@ -1,0 +1,101 @@
+@import "_variables";
+@import "_mixins";
+@import "_navbar";
+@import "_menu";
+@import "_container";
+@import "_footer";
+
+* {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contact--form--title{
+    font-size: 20px;
+    @include desktop{
+        font-size: 40px;
+    }
+}
+
+.contact--form__image{
+    display: none;
+}
+
+@include desktop {
+.contact--form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: $max-width;
+        &--left{
+            width: 40%;
+        }
+        &__image{
+            display: block;
+            width: 44%;
+        }
+}
+}
+
+
+.form{
+    padding: 10px 0;
+    
+   label, input, textarea{
+       display: block;
+       max-width: $max-width;
+       width: 100%;
+   }
+
+   label{
+       font-size: 10px;
+       color:#999;
+       padding: 16px 0 8px 0;
+   }
+
+   input, textarea{
+       padding: 10px;
+       resize: none;
+       border: solid 1px #999;
+       border-radius: 3px;
+   }
+
+
+   button:hover{
+       background: #222;
+   }
+   
+   .btn{
+
+    display: flex;
+    justify-content: end;
+
+        &__submit{
+            border-style: none;
+            padding: 10px 36px;
+            background: $black;
+            color: $white;
+            border-radius: 4px;
+            margin: 1rem 0;
+            cursor: pointer;
+        }
+   }
+   
+}
+
+.contact--info{
+    padding: 1rem 0;
+
+    &__item{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    }
+        .p--info{
+             font-size: 13px;
+             padding-left: 10px;
+        }
+}

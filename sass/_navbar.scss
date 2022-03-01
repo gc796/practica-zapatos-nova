@@ -1,0 +1,84 @@
+@import "_variables";
+@import "_mixins";
+
+//NAVBAR
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: $max-width;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+
+        .header__logo{
+            width: auto;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        @include desktop{
+            justify-content: space-between;
+        
+
+            .fa-bars{
+                display: none;
+            }
+
+            .header__logo {
+                width: 100%;
+            }
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            color:$black;
+
+            a:visited{
+                color: $black;
+            }
+
+            .nav__item, .shop{
+                display: none;
+            }
+
+            @include desktop{
+                .nav__item, .shop{
+                    display: flex;
+                    font-weight: 800;
+                    font-size: 12px;
+                    margin-left: 2rem;
+                    text-decoration: none;
+                }
+                .shop {
+                    cursor: pointer;
+                    padding: 10px;
+                    color: $white;
+                    background-color: $black;
+                    border-radius: 4px;   
+                }                    
+            }
+
+            i:hover{
+                transition: 1000ms ease;
+                transform: rotate(360deg);
+            }
+
+
+            .fa-bars{
+                cursor: pointer;
+            }
+
+        }
+}
+
+
+
+
+
+
+              

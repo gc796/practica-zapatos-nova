@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapatos Nova</title>
+    <title>ZN: Contacto</title>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,11 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/97eec942a3.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
     <div class="container">
-
         <header>
             <h1>
                 <a class="logo" href="index.html">
@@ -27,12 +26,11 @@
             </h1>
             <nav class="nav">
                 <ul>
-                    <li><a class="nav__item" href="#collection">COLECCIÓN</a></li>
-                    <li><a class="nav__item" href="#clients">CLIENTES</a></li>
+                    <li><a class="nav__item" href="index.html#collection">COLECCIÓN</a></li>
+                    <li><a class="nav__item" href="index.html#clients">CLIENTES</a></li>
                     <li><a class="nav__item" href="products.html">PRODUCTOS</a></li>
                     <li><a class="nav__item" href="contact.html">CONTACTO</a></li>
-                    <li><a href="#" target="_blank"><button class="shop">TIENDA ONLINE</button></a></li>
-                    
+                    <li><a class="nav__item shop">TIENDA ONLINE</a></li>
                     <label for="btn-menu"><i class="fa-solid fa-bars fa-2xl"></i></label>
                 </ul>
             </nav>
@@ -44,8 +42,8 @@
             <div class="menu__div">
                 <label for="btn-menu"><i class="fa-solid fa-xmark fa-2xl"></i></label>
                 <nav class="menu__nav">
-                    <a class="menu--nav__item" href="#collection">Colección</a>
-                    <a class="menu--nav__item" href="#clients">Clientes</a>
+                    <a class="menu--nav__item" href="index.html#collection">Colección</a>
+                    <a class="menu--nav__item" href="index.html#clients">Clientes</a>
                     <a class="menu--nav__item" href="products.html">Productos</a>
                     <a class="menu--nav__item" href="contact.html">Contacto</a>
                 </nav>
@@ -53,7 +51,8 @@
                 <div class="menu__footer">
                     <div class="footer__left">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="89.53" height="25.304" viewBox="0 0 89.53 25.304">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="89.53" height="25.304"
+                            viewBox="0 0 89.53 25.304">
                             <path id="Path_26" data-name="Path 26"
                                 d="M-235.871-70.047v23.9h-4.913l-12.038-22.707v22.04h1.93v.667H-255.7v-.667h1.93V-70.047h-1.93v-.667h9.687l9.2,17.618V-70.047h-1.93v-.667h4.808v.667Zm20.04,13.056v-2.6q0-6.423-.632-8.107a3.584,3.584,0,0,0-2-2.387,5.043,5.043,0,0,0-1.79-.281,5.192,5.192,0,0,0-1.807.281,2.611,2.611,0,0,0-1.246.983,6.9,6.9,0,0,0-.79,1.474,9.61,9.61,0,0,0-.474,2.176q-.211,2.036-.211,6v2.527a38.181,38.181,0,0,0,.333,6.089,7.7,7.7,0,0,0,.825,2.58,3.7,3.7,0,0,0,3.369,1.72,3.419,3.419,0,0,0,3.6-2.334Q-215.831-51.2-215.831-56.991Zm-4.492,11.2q-5.861,0-8.756-3.176t-2.9-9.2q0-6.019,3.106-9.476t8.792-3.457q5.686,0,8.581,3.281t2.9,9.318q0,6.037-2.931,9.371T-220.323-45.8ZM-194-52.5l6.107-17.548h-2.738v-.667h5.37v.667h-1.65L-195.37-45.8h-2.948l-8.95-24.251h-1.614v-.667h11.476v.667H-199.9Zm18.847,5.686-2.562-7.581h-6.949l-2.7,7.581h2.632v.667h-5.37v-.667h1.65l8.95-24.111h2.878l8.844,24.111h1.614v.667h-11.476v-.667Zm-5.9-17.548-3.3,9.2H-178Z"
                                 transform="translate(255.7 71.1)" fill="#fff" />
@@ -74,88 +73,48 @@
         </aside>
 
 
-        <section class="hero">
-            <p class="hero__title">NUEVA COLECCIÓN</p>
-            <img class="hero__image" src="img/hero.png" alt="">
+
+
+        <section class="contact--form">
+
+            <div class="contact--form--left">
+                <h1 class="contact--form--title">Contacto</h1>
+                <form action="index.html" class="form">
+
+                    <label for="">NOMBRE Y APELLIDO</label>
+                    <input type="text" placeholder="Lorem Ipsum">
+
+                    <label for="">CORREO ELECTRÓNICO</label>
+                    <input type="text" placeholder="lorem@ipsum.com" required>
+
+                    <label for="">MENSAJE</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="¿Cuál es tu consulta?"></textarea>
+
+                    <div class="btn"><button type="submit" class="btn__submit">Enviar</button></div>
+
+                </form>
+            </div>
+
+            <img class="contact--form__image" src="img/contact-desktop.png" alt="">
         </section>
 
 
-        <main class="main">
-            <div class="main__desc">
-                <div class="main__desc__title" id="collection">
-                    <h2 style="font-weight: 300;">Nuevos modelos,</h2>
-                    <h2>nueva personalidad</h2>
-                </div>
-                <div class="main__desc__text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna et aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                        nisi
-                        ut aliquip ex ea
-                        commodo consequat, ina comrta men iutre maxen meinoa.
-                    </p>
-                </div>
+
+        <section class="contact--info">
+            <div class="contact--info__item">
+                <i class="fa-solid fa-envelope i--info"></i>
+                <p class="p--info">zapatosnova@gmail.com</p>
             </div>
-
-
-            <div class="main__photos">
-                <img class="shoes1 shoes-mobile" src="img/1.png" alt="">
-                <img class="shoes2 shoes-mobile" src="img/2.png" alt="">
-                <img class="shoes3 shoes-mobile" src="img/3-big.png" alt="">
-                <img class="shoes4 shoes-mobile" src="img/4-big.png" alt="">
-                <img class="shoes5 shoes-mobile" src="img/5.png" alt="">
-                <img class="shoes6 shoes-mobile" src="img/6.png" alt="">
+            <div class="contact--info__item">
+                <i class="fa-solid fa-phone-flip i--info"></i>
+                <p class="p--info">(+341) 865 805 097</p>
             </div>
-        </main>
-
-        <section class="clients__testimonials">
-
-            <h2 class="clients__testimonials__title" id="clients">Nuestros <b>clientes</b></h2>
-
-            <div class="cards">
-                <article class="cards__client">
-                    <img src="img/quote.png" alt="">
-                    <p class="cards__client__comment">Lorem ipsum dolor sit amet, <b>adipiscing elit</b> , sed do
-                        eiusmod
-                        tempor
-                        incididunt ut
-                        labore
-                        et dolore magna
-                        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt.
-                    </p>
-                    <div class="cards__client__info">
-                        <img class="cards__client__info__photo" src="img/Cliente1.webp" alt="">
-                        <div>
-                            <p>Ximena Molinari</p>
-                            <p style="color: #999; font-size: 14px;">Rosario</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="cards__client">
-                    <img src="img/quote.png" alt="">
-                    <p class="cards__client__comment">Lorem ipsum dolor sit amet, adipiscing elit , sed do eiusmod
-                        tempor
-                        incididunt ut
-                        labore
-                        et dolore magna
-                        aliqua. Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>, sed do eiusmod tempor
-                        incididunt.
-                    </p>
-                    <div class="cards__client__info">
-                        <img class="cards__client__info__photo" src="img/Cliente2.webp" alt="">
-                        <div>
-                            <p>Melisa Di Bianco</p>
-                            <p style="color: #999; font-size: 14px;">Córdoba</p>
-                        </div>
-                    </div>
-                </article>
-
+            <div class="contact--info__item">
+                <i class="fa-solid fa-location-dot i--info"></i>
+                <p class="p--info">Presidente Roca 944, Rosario, Santa Fe</p>
             </div>
-
         </section>
+
 
         <footer class="footer">
             <div class="footer__left">
@@ -179,7 +138,6 @@
 
         </footer>
     </div>
-
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+@import "_variables";
+@import "_mixins";
+@import "_navbar";
+@import "_menu";
+@import "_container";
+@import "_footer";
+
+
+* {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        h2, h3, h4{
+            padding-bottom: 1rem;
+        }
+
+        .product--left, .product--right{
+            padding-bottom: 3rem;
+        }
+
+        .h2--desktop{
+            display: none;
+        }
+
+        .product__image{
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+         span{
+            display: none;
+         }
+
+        .more--info{
+            color: #999;
+            font-size: 14px;
+            padding-bottom: 1rem;
+        }
+
+        .index{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 4rem 0;
+            
+            li{
+                border: solid 1px #ddd;
+                padding: 10px 12px;
+            }
+        }
+
+
+        @include desktop{
+
+           .title{
+               font-size: 2.2rem;
+               padding-bottom: 1.5rem;
+           }
+
+           .subtitle{
+               font-size: 1.5rem;
+               font-weight: 400;
+           }
+
+           .product--left, .product--right{
+               display: flex;
+               align-items: center;
+               padding-bottom: 4rem;
+               gap: 2rem;
+
+               .h3--mobile{
+                   display: none;
+               }
+
+               .h2--desktop{
+                   display: contents;
+                   font-weight: 800;
+                   font-size: 2rem;
+               }
+
+               .product__image{
+                   width: 50%;
+
+               }
+               .product__desc{
+                
+                   p{
+                       font-size: 12px;
+                   }
+                    span{
+                        display:contents;
+                    }
+               }
+           }
+
+           .product--right{
+               display: flex;
+               flex-direction: row-reverse;
+           }
+
+            .more--info{
+                display: none;
+            }
+
+        }
+
+.index li{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+@import "_variables";
+@import "_mixins";
+@import "_navbar";
+@import "_menu";
+@import "_container";
+@import "_footer";
+
+* {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+//HERO
+
+.hero{
+    // width: $max-width;
+    // margin: 0 auto;
+    position: relative;
+        &__image{
+            width: 100%;
+
+            @include desktop{
+                max-width: $max-width;
+            }
+        }
+
+        &__title{
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+            padding: 5px;
+            text-align: center;
+            font-weight: 300;
+            color: $white;
+            width: 60%;
+            background-color: rgba($color: $black, $alpha: 0.66);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            @include desktop{
+                font-size: 4.5rem;
+                letter-spacing: -1.8px;
+                text-align: center;
+            }
+        }
+}
+
+//MAIN GALLERY
+
+.main{
+    // width: $max-width;
+    // margin: 0 auto;
+        &__desc{
+            display: inline-block;
+            text-align: start;
+            padding: 1rem;
+            
+            @include desktop{
+                display: flex;
+                align-items: center;
+                
+            }
+
+            &__title{
+
+                @include desktop{
+                    width: 70%;
+                    margin-right: 10%;
+                    font-size: 20px;  
+                }
+            }
+
+             &__text{
+                padding: 5% 0;
+                font-size: 1rem;
+              
+            }
+        }
+
+       &__photos{
+           display: grid;
+                .shoes-mobile{
+                    width: 100%;
+                }
+                .shoes1{
+                    grid-column: 1;
+                    grid-row: 1;   
+                }
+                .shoes2{
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+
+                .shoes3{
+                    grid-column: 1/3;
+                    grid-row: 2/4;
+                }
+
+                .shoes4{
+                    grid-column: 1/3;
+                    grid-row: 4/6;
+                }
+
+                .shoes5{
+                    grid-column: 1;
+                    grid-row: 6;                
+                }
+
+                .shoes6{
+                    grid-column: 2;
+                    grid-row: 6;                
+                }
+         
+           @include desktop{
+                .shoes1{
+                    grid-column: 1;
+                    grid-row: 1;   
+                }
+                .shoes2{
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+
+                .shoes3{
+                    grid-column: 3/5;
+                    grid-row: 1/3;
+                }
+
+                .shoes4{
+                    grid-column: 1/3;
+                    grid-row: 2/4;
+                }
+
+                .shoes5{
+                    grid-column: 3;
+                    grid-row: 3;                
+                }
+
+                .shoes6{
+                    grid-column: 4;
+                    grid-row: 3;                
+                }
+           }
+       }      
+}
+
+//TESTIMONIALS
+
+.clients__testimonials{
+
+    width: 100%;
+    padding: 1rem 0;
+
+    @include desktop{
+         width: 100%;
+         margin: 0 auto;
+    }
+        &__title{
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 300;;
+            text-align: center;
+            margin: 5% 0;
+        }
+}
+
+.cards{
+    display: block;
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+        &__client{
+            width: 100%;
+            margin-bottom: 1rem;
+            background: $black;
+            padding: 35px 40px 20px 40px;
+            border-radius: 8px;
+            color:$white;
+
+            @include desktop{
+                width: 48%;
+
+            }
+               
+                &__comment{
+                    margin-top: 15px;
+                }
+                &__info{
+                    display: flex;
+                    align-items: center;
+                        &__photo{
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            margin: 20px 30px 20px 0;
+                        }
+                }     
+         }
+}
