@@ -12,8 +12,6 @@
     box-sizing: border-box;
 }
 
-
-
 //HERO
 
 .hero{
@@ -58,20 +56,24 @@
         &__desc{
             display: inline-block;
             text-align: start;
-            padding: 1rem;
+            padding: 1rem 0;
             
             @include desktop{
                 display: flex;
                 align-items: center;
-                
+                gap:10%;  
             }
 
             &__title{
+                margin-right: 50%;
+                h2{
+                    font-size: 1.5rem; 
+                    font-weight: 300;
+                    }
 
                 @include desktop{
-                    width: 70%;
-                    margin-right: 10%;
-                    font-size: 20px;  
+                    width: 55%;
+                    margin-right: 0; 
                 }
             }
 

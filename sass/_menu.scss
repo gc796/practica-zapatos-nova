@@ -80,10 +80,37 @@
     color: $white;
     top: 45%;
 
-    .footer__left__copyright{
+    &__left{
+    display: block;
+    text-align: center;  
+    font-size: 12px;
+    margin: 1rem 0;
+        &__image{
+            width: 65px;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__left__copyright{
         padding-top: 1rem;
         padding-bottom: 2rem;
         font-size: 16px;
+    }
+
+    &__center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1.5rem;
+        
+
+        a {
+            color: $white;
+        }
+
+        .fa-brands{
+            margin-left: 1rem;
+        }
     }
 
     i{

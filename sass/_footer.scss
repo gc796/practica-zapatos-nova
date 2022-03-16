@@ -47,6 +47,11 @@
                 .fa-brands{
                     margin-left: 1rem;
                 }
+
+                a:link, a:visited, a:active {
+                    text-decoration:none;
+                    color: $black;
+                }
         }
         &__right{
                 display: flex;

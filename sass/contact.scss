@@ -12,7 +12,6 @@
     box-sizing: border-box;
 }
 
-
 .contact--form--title{
     font-size: 20px;
     @include desktop{
@@ -98,4 +97,9 @@
              font-size: 13px;
              padding-left: 10px;
         }
+
+    a:link, a:visited, a:active {
+    text-decoration:none;
+    color: $black;
+    }
 }

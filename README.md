@@ -2,9 +2,9 @@
 
 Práctica 1 y 2 dada por Onlines&co. 
 
-Practica 1: Landing page. 
+Práctica 1: Landing page. 
 
-Practice 2: home page (landing page) + vista de prouctos + vista de contacto y menú de hamburguesa.
+Práctica 2: home page (landing page) + vista de productos + vista de contacto y menú de hamburguesa.
 
 Todo en versión móvil y escritorio.
 
