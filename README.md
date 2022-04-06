@@ -1,6 +1,6 @@
-# practice-zapatos-nova
+# Practice with HTML and SASS (SCSS)
 
-Práctica 1 y 2 dada por Onlines&co. 
+Práctica dada por Onlines&co. 
 
 Práctica 1: Landing page. 
 
@@ -10,7 +10,7 @@ Todo en versión móvil y escritorio.
 
 ---------------------------------
 
-Practice 1 and 2 given by Onlines&co. 
+Practice given by Onlines&co. 
 
 Practice 1: Landing page.
 
